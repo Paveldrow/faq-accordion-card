@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 3 version
+*/
+
 img {
   max-width: 100%;
   height: auto;
@@ -25,13 +32,18 @@ img {
   font-size: 11px;
   color: hsl(238, 29%, 16%);
 
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(273, 75%, 66%)), to(hsl(240, 73%, 65%)));
+
+  background: -o-linear-gradient(top, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
   background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-repeat: no-repeat;
 }
 
 .faq-card {
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   min-height: 520px;
   margin: 0 auto;
@@ -39,6 +51,7 @@ img {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 140px;
+  padding-bottom: 20px;
   border-radius: 25px;
   background-color: #fff;
   background-image: url('../images/bg-pattern-mobile.svg');
@@ -51,7 +64,7 @@ img {
     min-width: 370px;
     max-width: 500px;
     padding-right: 20px;
-    min-height: 570px;
+    min-height: 590px;
   }
 }
 
@@ -63,8 +76,12 @@ img {
     padding-top: 60px;
     padding-right: 90px;
     padding-left: 500px;
-    background-image: url('../images/illustration-woman-online-desktop.svg');
-    background-position: -80px center;
+    padding-top: 40px;
+    
+    background-image: url('../images/illustration-woman-online-desktop.svg') ,
+     url('../images/bg-pattern-desktop.svg');
+     background-color: #fff;
+     background-position: -80px 65px, -580px -300px;
   }
 }
 
@@ -160,11 +177,17 @@ img {
   width: 10px;
   height: 7px;
   background-image: url('../images/icon-arrow-down.svg');
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
 }
 
 .faq-card__answer[open] > .faq-card__question::after {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
 }
 
