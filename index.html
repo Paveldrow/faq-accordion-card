@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 
@@ -17,40 +17,35 @@
     <h2 class="faq-card__title">FAQ</h2>
     <ul class="faq-card__list">
       <li class="faq-card__item">
-        <label>
-          <input class="faq-card__checkbox visually-hidden" type="checkbox">
-        <span class="faq-card__question">How many team members can I invite?</span>
-        <span class="faq-card__answer">You can invite up to 2 additional users on the Free plan. There is no limit on
-          team members for the Premium plan.</span>
-          </label>
+        <details class="faq-card__answer">
+          <summary class="faq-card__question">How many team members can I invite?</summary>
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </details>
       </li>
       <li class="faq-card__item">
-        <label>
-        <input class="faq-card__checkbox visually-hidden" type="checkbox" checked>
-        <span class="faq-card__question">What is the maximum file upload size?</span>
-        <span class="faq-card__answer">No more than 2GB. All files in your account must fit your allotted storage space.</span>
-        </label>
+        <details class="faq-card__answer">
+          <summary class="faq-card__question">What is the maximum file upload size?</summary>
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </details>
       </li>
       <li class="faq-card__item">
-        <label>
-          <input class="faq-card__checkbox visually-hidden" type="checkbox">
-        <span class="faq-card__question">How do I reset my password?</span>
-        <span class="faq-card__answer">Click “Forgot password” from the login page or “Change password” from your profile page.</span>
-        </label>
+        <details class="faq-card__answer">
+          <summary class="faq-card__question">How do I reset my password?</summary>
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+        </details>
       </li>
       <li class="faq-card__item">
-        <label>
-          <input class="faq-card__checkbox visually-hidden" type="checkbox">
-        <span class="faq-card__question">Can I cancel my subscription?</span>
-        <span class="faq-card__answer">A reset link will be emailed to you.</span>
-        </label>
+        <details class="faq-card__answer">
+          <summary class="faq-card__question">Can I cancel my subscription?</summary>
+          A reset link will be emailed to you.
+        </details>
       </li>
       <li class="faq-card__item">
-        <label>
-          <input class="faq-card__checkbox visually-hidden" type="checkbox">
-        <span class="faq-card__question">Do you provide additional support?</span>
-        <span class="faq-card__answer">Yes! Send us a message and we’ll process your request no questions asked. Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
-        </label>
+        <details class="faq-card__answer">
+          <summary class="faq-card__question">Do you provide additional support?</summary>
+          Yes! Send us a message and we’ll process your request no questions asked. Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </details>
       </li>
     </ul>
   </div>
