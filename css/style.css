@@ -22,12 +22,13 @@ img {
 }
 
 .page {
-  height: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .page-body {
+  min-height: 100%;
+  padding-bottom: 50px;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 11px;
   color: hsl(238, 29%, 16%);
